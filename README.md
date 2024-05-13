@@ -23,3 +23,5 @@
       2. python manage.py createsuperuser
    3. views
       1. R: CharacterListView
+   4. templates/콩순이/
+      1. character_list.html
