@@ -25,3 +25,5 @@
       1. R: CharacterListView
    4. templates/콩순이/
       1. character_list.html
+   5. urls
+      1. 콩순이:character_list
