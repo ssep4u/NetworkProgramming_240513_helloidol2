@@ -27,3 +27,7 @@
       1. character_list.html
    5. urls
       1. 콩순이:character_list
+4. templates/
+   1. base.html
+      1. settings.py > TEMPLATES
+         1. 'DIRS': [BASE_DIR / 'templates']
