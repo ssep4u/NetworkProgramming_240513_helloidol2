@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Update Character{% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <ul>
+            {{ form.as_ul }}    <!-- <li>...</li>-->
+        </ul>
+        <input type="submit" value="🛠 Character" class="btn btn-warning">
+    </form>
+{% endblock %}
