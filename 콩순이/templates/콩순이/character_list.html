@@ -16,5 +16,8 @@
         <td>{{ character.feature }}</td>
     </tr>
     {% endfor %}
+    <tr>
+        <td colspan="3"><a href="{% url '콩순이:character_create' %}" class="btn btn-success">+ Character</a></td>
+    </tr>
 </table>
 {% endblock %}
