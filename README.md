@@ -27,16 +27,19 @@
       2. R: CharacterDetailView
       3. C: CharacterCreateView
       4. U: CharacterUpdateView
+      5. D: CharacterDeleteView
    4. templates/콩순이/
       1. character_list.html
       2. character_detail.html
       3. character_create.html
       4. character_update.html
+      5. character_confirm_delete.html
    5. urls
       1. 콩순이:character_list
       2. 콩순이:character_detail
       3. 콩순이:character_create
       4. 콩순이:character_update
+      5. 콩순이:character_delete
 4. templates/
    1. base.html
       1. settings.py > TEMPLATES

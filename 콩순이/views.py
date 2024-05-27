@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from 콩순이.models import Character
 
@@ -29,3 +29,8 @@ class CharacterUpdateView(UpdateView):
     fields = '__all__'  # ['name', 'feature']
     template_name_suffix = '_update'  # character_form.html -> character_update.html
     success_url = reverse_lazy('콩순이:character_list')  # 수정 성공할 때 이동할 URL
+
+
+class CharacterDeleteView(DeleteView):
+    model = Character
+    success_url = reverse_lazy('콩순이:character_list')  # 삭제 성공할 때 이동할 URL
