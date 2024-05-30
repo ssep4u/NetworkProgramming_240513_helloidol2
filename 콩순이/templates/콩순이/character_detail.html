@@ -4,6 +4,14 @@
 
 {% block content %}
     <h1>{{ character.name }}</h1>
+
+    {% if character.photo == None %}
+        {% load static %}
+        <img src="{% static '콩순이/photo/no_photo.png' %}" alt="사진 없음">
+    {% else %}
+        <img src="{{ character.photo.url }}" alt="업로드한 사진">
+    {% endif %}
+
     <ul>
         <li>{{ character.feature }}</li>
         <li>{{ character.created_at }}</li>

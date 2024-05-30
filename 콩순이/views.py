@@ -19,14 +19,14 @@ class CharacterDetailView(DetailView):
 
 class CharacterCreateView(CreateView):
     model = Character
-    fields = ['name', 'feature']  # '__all__'
+    fields = ['name', 'feature', 'photo']  # '__all__'
     template_name_suffix = '_create'  # character_form.html -> character_create.html
     success_url = reverse_lazy('콩순이:character_list')  # 만들기 성공할 때 이동할 URL
 
 
 class CharacterUpdateView(UpdateView):
     model = Character
-    fields = '__all__'  # ['name', 'feature']
+    fields = '__all__'  # ['name', 'feature', 'photo']
     template_name_suffix = '_update'  # character_form.html -> character_update.html
     success_url = reverse_lazy('콩순이:character_list')  # 수정 성공할 때 이동할 URL
 

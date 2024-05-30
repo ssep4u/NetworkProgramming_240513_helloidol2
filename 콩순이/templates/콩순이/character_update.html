@@ -3,7 +3,7 @@
 {% block title %}Update Character{% endblock %}
 
 {% block content %}
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <ul>
             {{ form.as_ul }}    <!-- <li>...</li>-->
